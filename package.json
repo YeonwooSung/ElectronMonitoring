@@ -1,0 +1,26 @@
+{
+  "name": "electronmonitoring",
+  "version": "1.0.0",
+  "description": "A monitoring app with Electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YeonwooSung/ElectronMonitoring.git"
+  },
+  "keywords": [
+    "electron",
+    "monitoring"
+  ],
+  "author": "Yeonwoo Sung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YeonwooSung/ElectronMonitoring/issues"
+  },
+  "homepage": "https://github.com/YeonwooSung/ElectronMonitoring#readme",
+  "devDependencies": {
+    "electron": "^4.0.1"
+  }
+}
