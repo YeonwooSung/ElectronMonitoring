@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.img_row_container {
+    margin: 0;
+    padding: 0;
+}
+
+/* Size check!! */
+img {
+    width: 9.8vw;
+    height: 19.5vh;
+}
