@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "prepack": "babel --out-dir js jsx"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,13 @@
   },
   "homepage": "https://github.com/YeonwooSung/ElectronMonitoring#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "electron": "^4.0.1"
+  },
+  "dependencies": {
+    "react-dom": "^16.7.0"
   }
 }
