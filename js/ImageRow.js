@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -28,28 +28,17 @@ var ImageRow = function (_React$Component) {
     }
 
     _createClass(ImageRow, [{
-        key: "componentDidMount",
-        value: function componentDidMount() {
-            var script = document.createElement("script");
-
-            script.src = "./public/javascripts/getImageViaAjax.js";
-            script.async = true;
-
-            //document.body.appendChild(script);
-            document.head.appendChild(script);
-        }
-    }, {
-        key: "render",
+        key: 'render',
         value: function render() {
             var imgPaths = ['./images/r1.png', './images/r2.png', './images/r3.png', './images/r4.png', './images/r5.png', './images/r6.jpg', './images/r7.png', './images/r8.png', './images/r9.png', './images/r10.png'];
 
             var imgList = imgPaths.map(function (image) {
-                return _react2.default.createElement("img", { src: image, key: image });
+                return _react2.default.createElement('img', { src: image, key: image });
             });
 
             return _react2.default.createElement(
-                "div",
-                { className: "img_row_container" },
+                'div',
+                { className: 'img_row_container' },
                 imgList
             );
         }

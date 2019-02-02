@@ -32,15 +32,25 @@ var Monitor = function (_React$Component) {
     }
 
     _createClass(Monitor, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var script = document.createElement("script");
+
+            script.src = "./public/javascripts/getImageViaAjax.js";
+            script.async = true;
+
+            document.head.appendChild(script);
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 { id: 'monitor' },
                 _react2.default.createElement(_ImageRow2.default, null),
-                _react2.default.createElement(_ImageRow2.default, { isReversed: true }),
                 _react2.default.createElement(_ImageRow2.default, null),
-                _react2.default.createElement(_ImageRow2.default, { isReversed: true }),
+                _react2.default.createElement(_ImageRow2.default, null),
+                _react2.default.createElement(_ImageRow2.default, null),
                 _react2.default.createElement(_ImageRow2.default, null)
             );
         }
