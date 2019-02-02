@@ -6,7 +6,7 @@ export default class Monitor extends React.Component {
     componentDidMount() {
         const script = document.createElement("script");
 
-        script.src = "./public/javascripts/getImageViaAjax.js";
+        script.src = "./public/javascripts/loader.js";
         script.async = true;
 
         document.head.appendChild(script);

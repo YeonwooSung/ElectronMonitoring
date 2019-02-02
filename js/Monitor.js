@@ -36,7 +36,7 @@ var Monitor = function (_React$Component) {
         value: function componentDidMount() {
             var script = document.createElement("script");
 
-            script.src = "./public/javascripts/getImageViaAjax.js";
+            script.src = "./public/javascripts/loader.js";
             script.async = true;
 
             document.head.appendChild(script);
