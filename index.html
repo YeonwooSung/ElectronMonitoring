@@ -4,6 +4,15 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./public/stylesheets/index.css">
         <title>Hello World!</title>
+        <script>
+            function openNewWindow() {
+                const remote = require('electron').remote;
+                const BrowserWindow = remote.BrowserWindow;
+
+                var win = new BrowserWindow({ width: 800, height: 600 });
+                win.loadURL('www.google.com');
+            }
+        </script>
     </head>
     <body>
         <noscript>
