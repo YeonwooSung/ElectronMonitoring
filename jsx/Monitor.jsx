@@ -4,12 +4,17 @@ import ImageRow from './ImageRow';
 
 export default class Monitor extends React.Component {
     componentDidMount() {
-        const script = document.createElement("script");
+        const script1 = document.createElement("script");
+        const script2 = document.createElement("script");
 
-        script.src = "./public/javascripts/loader.js";
-        script.async = true;
+        script1.src = "./public/javascripts/loader.js";
+        script1.async = true;
 
-        document.head.appendChild(script);
+        script2.src = "./public/javascripts/openChat.js";
+        script2.async = true;
+
+        document.head.appendChild(script1);
+        document.head.appendChild(script2);
     }
 
     render() {

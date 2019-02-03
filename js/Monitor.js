@@ -34,12 +34,17 @@ var Monitor = function (_React$Component) {
     _createClass(Monitor, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
-            var script = document.createElement("script");
+            var script1 = document.createElement("script");
+            var script2 = document.createElement("script");
 
-            script.src = "./public/javascripts/loader.js";
-            script.async = true;
+            script1.src = "./public/javascripts/loader.js";
+            script1.async = true;
 
-            document.head.appendChild(script);
+            script2.src = "./public/javascripts/openChat.js";
+            script2.async = true;
+
+            document.head.appendChild(script1);
+            document.head.appendChild(script2);
         }
     }, {
         key: 'render',

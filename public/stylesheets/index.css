@@ -9,7 +9,14 @@ body {
 }
 
 /* Size check!! */
+input {
+    width: 9.8vw;
+    height: 19.5vh;
+}
+
+/*
 img {
     width: 9.8vw;
     height: 19.5vh;
 }
+*/

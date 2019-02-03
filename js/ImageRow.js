@@ -33,7 +33,7 @@ var ImageRow = function (_React$Component) {
             var imgPaths = ['./images/r1.png', './images/r2.png', './images/r3.png', './images/r4.png', './images/r5.png', './images/r6.jpg', './images/r7.png', './images/r8.png', './images/r9.png', './images/r10.png'];
 
             var imgList = imgPaths.map(function (image) {
-                return _react2.default.createElement('img', { src: image, key: image, className: image });
+                return _react2.default.createElement('input', { key: image, type: 'image', src: image, className: image });
             });
 
             return _react2.default.createElement(
