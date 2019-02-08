@@ -4,7 +4,9 @@ function openNewWindow() {
     const BrowserWindow = remote.BrowserWindow;
 
     var win = new BrowserWindow({ width: 800, height: 600 });
-    win.loadURL('www.google.com');
+
+    // load the chat.html from html directory.
+    win.loadFile('../html/chat.html');
 }
 
 /* Add event listeners to image buttons to open a new window when the user click the image. */
