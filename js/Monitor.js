@@ -40,7 +40,7 @@ var Monitor = function (_React$Component) {
             script1.src = "./public/javascripts/loader.js";
             script1.async = true;
 
-            script2.src = "./public/javascripts/openChat.js";
+            script2.src = "./public/javascripts/openChatRoom.js";
             script2.async = true;
 
             document.head.appendChild(script1);
